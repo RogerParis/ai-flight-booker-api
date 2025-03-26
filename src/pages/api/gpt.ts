@@ -36,14 +36,14 @@ export default async function handler(
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful travel booking assistant. Use the given MCP context.',
+            content: 'You are a helpful travel booking assistant. Use the given MCP context to give an approximate price in EUR.',
           },
           {
             role: 'user',
             content: `MCP Context:\n${JSON.stringify(mcp, null, 2)}`,
           },
         ],
-        max_tokens: 125,
+        max_tokens: 100,
       }),
     });
 
