@@ -43,6 +43,7 @@ export default async function handler(
             content: `MCP Context:\n${JSON.stringify(mcp, null, 2)}`,
           },
         ],
+        max_tokens: 125,
       }),
     });
 
